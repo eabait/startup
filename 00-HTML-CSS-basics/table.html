@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My table</title>
+    <meta name="description" content= "A table with my expenses " />
+    <meta name="robots" content= "index, follow">
+    <meta name="author" content="Juan Fernando Pico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+body {
+    background: #ffffff;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.4em;
+    font-family: tahoma, arial, sans-serif;
+    font-size: 62.5%;
+}
+
+table {
+    width: 80%;
+    margin: 0;
+    background: #FFFFFF;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-bottom: 1px solid #333333;
+    padding: 6px 16px;
+    text-align: left;
+    border: 2px solid #333333;
+}
+
+th {
+    background: #EEEEEE;
+}
+
+caption {
+    background: #E0E0E0;
+    margin: 0;
+    border: 1px solid #333333;
+    border-bottom: none;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>My table</h1>
+               <table >
+                    <caption>My expenses in February</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Food</th>
+                            <th>Party</th>
+                            <th>Boca juniors</th>
+                            <th>Girldfriend</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <th>Week 1</th>
+                                <td>$1500</td>
+                                <td>$2000</td>
+                                <td>$3000</td>
+                                <td>$500</td>
+                            </tr>
+                            <tr>
+                                <th>Week 2</th>
+                                <td>$500</td>
+                                <td>$0</td>
+                                <td>$2500</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr>
+                                <th>Week 3</th>
+                                <td>$1000</td>
+                                <td>$2000</td>
+                                <td>$0</td>
+                                <td>$750</td>
+                            </tr>
+                            <tr>
+                                <th>Week 4</th>
+                                <td>$200</td>
+                                <td>$0</td>
+                                <td>$2000</td>
+                                <td>$1000</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"  style='text-align: center; font-weight: bold;'>Total</td>
+                                <td  style=' font-weight: bold;'>16950</td>
+                            </tr>
+                        </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" style="border: 0px;">All information shown is approximate</td>
+                        </tr>
+                    </tfoot>
+                    
+                </table>
+
+</body>
+</html>
