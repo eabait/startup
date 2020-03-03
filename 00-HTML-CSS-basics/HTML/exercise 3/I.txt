@@ -1,0 +1,8 @@
+Accessibility is important because:
+ #The web should be designed for all people.
+ #The web should remove barriers for people to allowing them freedom that defies the physical world
+ #Is essential for those that want to create high quality web tools or websites.
+ #Accessibility supports social inclusion
+ #Accessibility not only allows people with disabilities to perform better in the use of the web but overall makes also friendly use to everybody
+
+The UN convention recognizes the accessibility in communication and technology as part of the basic human rights. Accessibility is also part of the best practices for developing as any other if not more, even can get benefits in popularity, performance and costs of maintenance.
