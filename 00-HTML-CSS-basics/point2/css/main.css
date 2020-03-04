@@ -1,0 +1,113 @@
+* {
+    font-size: 14px;
+    font-family: serif;
+    font-weight: 700;
+}
+
+
+/* Setting box-sizing to border-box */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
+
+/* --------------------- */
+
+.h2 {
+    font-size: inherit;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.article {
+    background-color: grey;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.section {
+    border-radius: 10px;
+    float: left;
+    font-size: 14px;
+    height: 400px;
+    margin: 0.5% 0.5%;
+    width: 31%;
+}
+
+.section>.header {
+    height: 50px;
+    margin: 0 0;
+}
+
+.section>.footer {
+    height: 50px;
+    margin: 0 0;
+}
+
+.footer {
+    background-color: grey;
+    border-radius: 10px;
+    clear: both;
+    font-size: 10px;
+    height: 100px;
+    margin: 0.5% 1%;
+    text-align: center;
+}
+
+.header {
+    background-color: grey;
+    border-radius: 10px;
+    font-size: 46px;
+    height: 100px;
+    margin: 0.5% 1%;
+    text-align: center;
+}
+
+.navigation {
+    background-color: grey;
+    border-radius: 10px;
+    float: left;
+    font-size: 12px;
+    height: 400px;
+    margin: 0.5% 1%;
+    width: 32%;
+}
+
+.sidebar {
+    background-color: grey;
+    border-radius: 10px;
+    float: left;
+    font-size: 10px;
+    height: 400px;
+    margin: 0.5% 1%;
+    width: 32%;
+}
+
+
+/* Group resets the flow of the document after grouping elements with float: defined inside of it */
+
+group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
