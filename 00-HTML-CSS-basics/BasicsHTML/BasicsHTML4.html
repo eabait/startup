@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!--Standard mode HTML5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Unicode character-->
+    <meta name="description" content="Bootcamp Web UI">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Antonella Buono">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--dimensions and scale for different devices-->
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form-horizontal">
+
+            <div class="form-group" role="form">
+                <label for="name">First Name:</label>
+                <input type="text" name="name" id="name" required class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" required class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" id="birthday" required class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+            <label>Select your favourite sport:</label>
+                <select>
+                    
+                    <option value="">Tennis</option>
+                    <option value="">Football</option>
+                    <option value="">Voleyball</option>
+                </select>
+            </div>
+            <br>
+            <label>Bio: </label>
+            <textarea required></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+
+        </form>
+    </div>
+</body>
+</html>
