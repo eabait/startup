@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eeeeee;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    /*border: solid 5px black;*/
+    padding: 10px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Establece los ítems en modo multilínea (permite que se desborde el contenedor). */
+    margin: 0px 25px;
+}
+
+/*
+
+    justify-content: Se utiliza para alinear los ítems del eje principal (por defecto, el horizontal).
+    align-items: Usada para alinear los ítems del eje secundario (por defecto, el vertical).
+
+    justify-content: ;
+    space-between 	Distribuye los ítems dejando (el mismo) espacio entre ellos.
+    space-around 	Distribuye los ítems dejando (el mismo) espacio a ambos lados de cada uno de ellos.
+*/
+
+header{
+    /*border: solid 5px black;*/
+    display: flex;
+    padding: 10px;
+    margin: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tittle{
+    width: 30%;
+}
+
+.description{
+    width: 50%;
+}
+
+
+/* ----------------- Overlay hover effect ----------------- */
+
+.image{
+    position: relative;
+    margin: 10px;
+}
+
+.screen {
+	background-color: rgba(0,0,0,0.5);
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+    position: absolute;
+	opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+.screen:hover{
+  opacity: 1
+}
+
+.image-tittle{
+    color: snow;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* -------------------------------------------------------- */
+
+@media screen and (max-width:1000px) {
+    .tittle{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .description{
+        width: 100%;
+    }
+}

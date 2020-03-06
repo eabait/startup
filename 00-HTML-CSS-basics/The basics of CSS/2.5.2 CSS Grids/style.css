@@ -45,7 +45,7 @@ body{
     margin: 20px auto;
 }
 
-.grid .item{
+.item{
     grid-column-start: 1;
     grid-column-end: 3;
     width: 100%;
@@ -54,8 +54,41 @@ body{
 }
 
 div{
-    margin: auto;
+    margin: 10px auto;
 }
 
+@media screen and (max-width:1250px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }  
 
+    .grid .item{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 
+    .grid .item-2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .grid .item{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .grid .item-2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
