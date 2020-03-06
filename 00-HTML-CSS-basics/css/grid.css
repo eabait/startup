@@ -49,8 +49,47 @@ background: chocolate;
 
 
 
+.overimage{
+background: rgba(0,0,0, 0.6);
+position: absolute;
+left:0;
+right:0;
+top:0;
+bottom:0;
+display: none;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+height: 25%;
+}
+
 .description {
 font-weight: bold;
 text-align: top;
 display: block;
+}
+
+.item:hover .overimage{
+display: block;
+
+}
+
+
+@media screen and (max-width: 500px){
+.container {
+    grid-gap: 3px;
+}
+
+.left {
+    float: left;
+    margin-left: 10px;
+}
+
+.right {
+    float: right;
+	font-weight: 300;
+	margin-left: 10px;
+    margin-right: 10px; 
+}
 }
