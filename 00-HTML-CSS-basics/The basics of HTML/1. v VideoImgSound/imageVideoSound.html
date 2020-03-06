@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example of how aplicate image and video and sound in an HTML document">
+    <meta name="keywords" content="HTML, video, audio, image">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <section>
+                <h3>Image</h3>
+                <figure>
+                    <img src="img/cat.jpg" alt="View from an aggressive cat" title="This is my cat, Snowball" width="400" height="400">
+                </figure>
+            </section>
+        </li>
+
+        <li>
+            <section id="video">
+                <h3>Video</h3>
+                <video  id="myVideo" controls width="720" height="306">
+                    <source src="video/sintel-short.mp4"> 
+                    <source src="video/sintel-short.webm">    
+                </video>
+            </section>
+        </li>
+
+        <li>
+            <section id="audio">
+                <h3>Audio</h3>
+                <audio src="sound/Moonlight.mp3" controls></audio>
+            </section>
+        </li>
+    </ul>
+</body>
+</html>

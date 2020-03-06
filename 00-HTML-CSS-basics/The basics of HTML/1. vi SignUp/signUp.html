@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example of sign up form">
+    <meta name="keywords" content="form, signUp">
+    <title>Document</title>
+</head>
+<body>
+    <form id="signUp-form" action="signUp.php" method="post">
+        <input type="hidden" name="redirect" value="http://www.google.com"/>
+        <ul>
+            <li>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" value="" required/>
+            </li>
+            <li>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" value="" required/>
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" value="" required/>
+            </li>
+            <li>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required>
+            </li>
+            <li>
+                <label for="sports">Sports:</label>
+                <select name="sports" id="sports">
+                  <option value="">Choose your favorite sport</option>
+                  <option value="futbol">Futbol</option>
+                  <option value="basquet">Basquet</option>
+                  <option value="tennis">Tennis</option>
+                  <option value="handball">Handball</option>
+                </select>
+            </li>    
+            <li>
+                <label for="bio">Biography:</label>
+                <textarea name="bio" id="bio" cols="25" rows="3"></textarea>
+            </li>
+            <li>
+                <input type="submit" value="submit" />
+                <input type="reset" value="reset" />
+            </li>
+        </ul>
+    </form>
+    
+</body>
+</html>

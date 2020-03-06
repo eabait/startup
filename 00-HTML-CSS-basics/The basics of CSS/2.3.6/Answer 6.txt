@@ -1,0 +1,13 @@
+How could you add weight to the global font definition to win over the classes added by point 3?
+
+- A way to give add weight to the global font definition is using the property "!important". As follows:
+
+*{
+ font-size: 20px !important;
+}
+
+.text{
+ font-size: 10px;
+}
+
+If an element used the "text" class, the global declaration would have more weight
