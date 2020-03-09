@@ -18,7 +18,9 @@ body{
     align-items: center;
     flex-wrap: wrap; /* Establece los ítems en modo multilínea (permite que se desborde el contenedor). */
     margin: 0px 25px;
+    
 }
+
 
 /*
 
@@ -39,6 +41,14 @@ header{
     justify-content: space-between;
 }
 
+.column {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30%;
+}
+
 .tittle{
     width: 30%;
 }
@@ -52,7 +62,11 @@ header{
 
 .image{
     position: relative;
-    margin: 10px;
+    margin: 10px auto;
+}
+
+.img{
+    max-width: 100%;
 }
 
 .screen {
@@ -70,7 +84,7 @@ header{
           transition: all 0.3s ease-in-out;
 }
 
-.screen:hover{
+.image:hover .screen{
   opacity: 1
 }
 
@@ -82,7 +96,8 @@ header{
 
 /* -------------------------------------------------------- */
 
-@media screen and (max-width:1000px) {
+
+@media screen and (max-width:1200px) {
     .tittle{
         width: 100%;
         margin-bottom: 20px;
@@ -90,5 +105,25 @@ header{
     
     .description{
         width: 100%;
+    }
+
+    .column{
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .image{
+        margin: auto 10px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .column{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .image{
+        margin: 10px auto;
     }
 }
