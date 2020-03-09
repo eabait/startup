@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document metadata -->
+    <title>Form</title> 
+    <meta charset="UTF-8">
+    <meta name="author" content="Pilar Fernandez Mutti" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  
+  <body>
+    <!-- Document content -->
+    <header>
+        <h1>Form</h1>
+    </header>
+
+    <form action="/signup" method="post">
+        <p>
+          <label>First name</label><br>
+          <input type="text" name="first_name">
+        </p>
+        <p>
+          <label>Last name</label><br>
+          <input type="text" name="last_name">
+        </p>
+        <p>
+          <label>Email</label><br>
+          <input type="email" name="email" required>
+        </p>
+        <p>
+          <label>Phone number</label><br>
+          <input type="tel" name="phone">
+        </p>
+        <p>
+          <label>Birthday:</label>
+          <input type="date" name="birthday">
+        </p>
+        <p>
+            <label>Sport:</label>
+            <select name="sports">
+                <option value="soccer">Soccer</option>
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+                <option value="tennis">Tennis</option>
+              </select>
+        </p>
+        <p>
+            <label>Bio:</label>
+            <textarea name="bio">Enter text here...</textarea>
+
+        </p>
+        <p>
+          <button>Sign up</button>
+          <button type="reset">Reset form</button>
+        </p>
+      </form>
+  </body>
+
+  <style>
+    form{
+      line-height: 2em;
+      padding-left:10px;
+    }
+    h1{
+      padding: 10px;
+    }
+    label{
+      font-weight:bold;
+    }
+  </style>
+
+</html>

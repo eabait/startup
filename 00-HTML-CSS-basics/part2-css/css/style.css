@@ -1,0 +1,102 @@
+/**Elements**/
+
+html {
+    box-sizing: border-box
+  }
+  *, *::before, *::after {
+    box-sizing: inherit
+  }
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+header{
+    background-color:red;
+    text-align: center;
+    
+}
+footer{
+    background-color: pink;
+    text-align: center;
+}
+aside{
+    background-color: chartreuse;
+    
+}
+nav{
+    background-color: chocolate;
+    
+}
+
+/** Classes **/
+
+.header{
+    margin-top:20px;
+    font-size:46px;
+    background-color: magenta;
+
+}
+.footer{
+    font-size:10px;
+    background-color: magenta;
+    width:100%;
+    float:left;
+    margin-top:10px;
+    padding:20px 0;
+}
+
+.content{
+    font-size:14px;   
+    line-height: 40px;
+    padding:10px 10px;
+    background-color: beige;
+    margin: 10px;    
+}
+@media only screen and (min-width:768px){
+  .content{
+    width:58%;
+    height:300px;
+    float:left;
+   }
+}
+
+
+.navigation{
+    font-size:12px;
+    background-color: blue;
+    line-height: 30px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+@media only screen and (min-width:768px){
+  .navigation{
+    width:20%;
+    height:300px;    
+    float:left;
+  }
+}
+
+
+.sidebar{
+    font-size:10px;
+    background-color: magenta;
+    line-height: 30px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    text-align: center;
+    
+}
+@media only screen and (min-width:768px){
+   .sidebar{
+    width:20%;
+    height:300px;
+    float:left;
+   }
+}
+
+div.contenido-principal{
+    margin: 0 auto;
+    width:95%;
+}
