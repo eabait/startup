@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box
+  }
+  *, *::before, *::after {
+    box-sizing: inherit
+  }
+
+
+.texto{
+    padding:30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align:center;
+}
+
+.grid{
+    padding:10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width:95%;
+    margin: 0 auto;
+}
+
+.hover-img{
+    position:relative;
+}
+.hover-img p{
+    position:absolute;
+    opacity:0;   
+}
+.hover-img:hover p{
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 15px 10px;
+    margin:0;
+    background-color:  rgba(139, 139, 139, 0.7);
+    opacity:0.9;
+    width: 94%;
+    color: black;
+}
