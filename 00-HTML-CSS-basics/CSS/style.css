@@ -1,0 +1,94 @@
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+header,
+section,
+aside,
+footer,
+nav {
+    margin: 0 1.5% 24px 1.5%;
+    font-weight: 100;
+}
+header,
+aside,
+footer,
+nav {
+    background: #2db34a;
+}
+
+header,
+footer {
+    text-align: center;
+    
+}
+
+footer {
+    clear: both;
+}
+
+section {
+    
+}
+
+
+.header{
+    font-size: 46px;
+    background: magenta;
+}
+
+.footer{
+    font-size: 10px;
+    background: magenta;
+}
+    
+
+.content{
+    font-size: 14px;
+    background: rgb(211, 210, 210);
+}
+@media only screen and (min-width:768px){
+    .content{
+        width: 45%;
+        float: left;
+    }
+}
+.navigation{
+    font-size: 12px;
+    background: blue;
+    line-height: 30px;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+@media only screen and (min-width:768px){
+    .navigation{
+        height: 582px;
+        width: 23%;
+        float: left;
+    }
+}
+
+.sidebar{
+    font-size: 10px;
+    background: magenta;
+    line-height: 30px;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+@media only screen and (min-width:768px){
+    .sidebar{
+        height: 582px;
+        width: 23%;
+        float: left;
+    }
+}
+
+/* CSS NO SOLICITADO EN EJ, AGREGADO POR ESTETICA  */
+h1{  
+    border-radius: 6px;
+    color: white;
+    display: block;
+    padding: 24px 15px;
+}
