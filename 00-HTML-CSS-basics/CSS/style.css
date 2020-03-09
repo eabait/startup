@@ -4,8 +4,6 @@ html {
     font-size: 14px;
 }
 
-
-
 header,
 section,
 aside,
@@ -31,25 +29,8 @@ footer {
     clear: both;
 }
 
-aside {
-    
-    float: left;
-    width: 23%;
-    
-
-}
-
-nav {
-    
-    float: left; 
-    width: 23%;
-    
-
-}
 section {
-    background: rgb(211, 210, 210);
-    width: 45%;
-    float: left;
+    
 }
 
 
@@ -66,14 +47,42 @@ section {
 
 .content{
     font-size: 14px;
+    background: rgb(211, 210, 210);
+}
+@media only screen and (min-width:768px){
+    .content{
+        width: 45%;
+        float: left;
+    }
 }
 .navigation{
     font-size: 12px;
     background: blue;
+    line-height: 30px;
+    padding: 10px 10px;
+    margin: 10px 0;
 }
+@media only screen and (min-width:768px){
+    .navigation{
+        height: 582px;
+        width: 23%;
+        float: left;
+    }
+}
+
 .sidebar{
     font-size: 10px;
     background: magenta;
+    line-height: 30px;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+@media only screen and (min-width:768px){
+    .sidebar{
+        height: 582px;
+        width: 23%;
+        float: left;
+    }
 }
 
 /* CSS NO SOLICITADO EN EJ, AGREGADO POR ESTETICA  */
