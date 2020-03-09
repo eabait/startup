@@ -1,7 +1,0 @@
-Ni el audio ni el video se reproducen en firefox
-
-Como descargar IE en ubuntu 
-
-Explicar view port brevemente , cual conviene mas 
-
-Warning en input type date
