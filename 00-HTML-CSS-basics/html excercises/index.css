@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+}
+
+header,
+footer,
+aside,
+nav {
+    background-color: #333333;
+}
+
+html * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    font-size: 46px;
+    text-align: center;
+    padding: 2px;
+}
+
+.footer {
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    font-size: 14px;
+    float: none;
+}
+
+.navigation {
+    font-size: 12px;
+    float: left;
+    text-align: center;
+}
+
+.navigation a {
+    line-height: 5rem;
+}
+
+.sidebar {
+    font-size: 10px;
+    float: right;
+}
+
+#article-title,
+#article-footer,
+#aside-header {
+    text-align: center;
+}
+
+.article-content,
+.aside-content {
+    text-align: justify;
+}
+
+[class$="r"] {
+    background-color: magenta;
+}
+
+[class*="a"]:not([class$="r"]) {
+    background-color: blue;
+}
+
+@media screen and (max-width: 480px) {
+    html * {
+        width: 92%;
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

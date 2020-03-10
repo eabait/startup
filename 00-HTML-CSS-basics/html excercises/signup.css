@@ -1,0 +1,41 @@
+body {
+    background-color: #111111;
+}
+
+h1 {
+    color: #777777;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+#signup-form {
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.item-form {
+    display: flex;
+    padding: 1%;
+}
+
+#first-name,
+#last-name,
+#email,
+#birthday,
+#sport,
+#bio {
+    position: absolute;
+    margin-left: 10%;
+}
+
+label {
+    color: #777777;
+}
+
+.btn-form {
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    margin-top: 5%;
+}

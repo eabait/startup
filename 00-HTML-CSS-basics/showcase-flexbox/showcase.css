@@ -1,0 +1,115 @@
+html * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 10%;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25%;
+    margin-left: 3%;
+}
+
+.text {
+    max-width: 50%;
+}
+
+.img-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.image {
+    width: 30%;
+    margin: 1%;
+    cursor: pointer;
+    position: relative;
+}
+
+.image:hover img {
+    transition: 0.5s ease all;
+    filter: brightness(0.3);
+}
+
+.image:hover .text-container {
+    visibility: visible;
+}
+
+img {
+    width: 100%;
+}
+
+.text-container {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    color: white;
+    visibility: hidden;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    width: 100%;
+    white-space: pre;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    h1 {
+        margin-left: 10%;
+    }
+    .text {
+        max-width: 100%;
+        margin: auto 5%;
+        text-align: justify;
+    }
+    .img-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .image {
+        width: 100%;
+        padding: 5%;
+        margin-bottom: 10%;
+        position: relative;
+    }
+    .text-container {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 90%;
+    }
+    h1 {
+        margin-left: 10%;
+    }
+    .text {
+        text-align: justify;
+    }
+    .img-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .image {
+        width: 80%;
+        padding: 5%;
+        margin-bottom: 10%;
+        position: relative;
+    }
+    .text-container {
+        left: 25%;
+    }
+}

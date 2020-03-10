@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sign Up Form</h1>
+    </header>
+
+    <form id="signup-form">
+        <input type="hidden" name="redirect" value="https://www.google.com" />
+        <div class="item-form">
+            <label for="first-name">First name:</label>
+            <input type="text" name="first-name" id="first-name" value="" required />
+        </div>
+        <div class="item-form">
+            <label for="last-name">Last name:</label>
+            <input type="text" name="last-name" id="last-name" value="" required />
+        </div>
+        <div class="item-form">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required />
+        </div>
+        <div class="item-form">
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" required />
+        </div>
+        <div class="item-form">
+            <label for="sport">Favourite Sport:</label>
+            <select name="sport" id="sport" required>
+          <option value="">...</option>
+          <option value="soccer">Soccer</option>
+          <option value="basketball">Basketball</option>
+          <option value="rugby">Rugby</option>
+          <option value="tenis">Tenis</option>
+          <option value="gym">Gym</option>
+          <option value="swimming">Swimming</option>
+          <option value="martial">Martial Arts</option>
+          <option value="other">Other</option>
+        </select>
+        </div>
+        <div class="item-form">
+            <label for="bio">Small Bio:</label>
+            <textarea name="bio" id="bio" cols="30" rows="3" minlength="20" maxlength="90" required></textarea>
+        </div>
+        <div class="btn-form">
+            <input type="submit" id="submit" value="Submit" />
+            <input type="reset" value="Reset values" />
+        </div>
+    </form>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>

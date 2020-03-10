@@ -1,0 +1,13 @@
+How could you add weight to the global font definition to win over the classes added by point 3?
+
+What I thougth about this exercise is to implement the selector * {} to select all and add the weight
+in the font-weigth property. Sometimes I use html * {} because I want all selector within html.
+
+
+
+
+Imagine there is a declaration like class=”oh-no-inline-styles” style=”background:red” and you need 
+to change the background to green without changing the inline style. How could you accomplish this?
+
+In this case, I thought to put an id and then change the background color to green. That's because
+id has more weigth than classes and selectors.
