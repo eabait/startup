@@ -1,0 +1,61 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+* header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: red;
+}
+
+* #section-header {
+  height: 50px;
+  background-color: indigo;
+}
+
+* #main-header {
+  height: 100px;
+}
+
+* article {
+  height: 200px;
+}
+
+* footer {
+  width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: green;
+}
+
+* #section-footer {
+  width: auto;
+  height: 50px;
+  background-color: lightcoral;
+}
+
+* aside {
+  float: right;
+  height: 300px;
+  width: 150px;
+  background-color: greenyellow;
+}
+
+* nav {
+  float: left;
+  height: 300px;
+  width: 150px;
+  background-color: hotpink;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,5 @@
+According to airbnb css/sass Styleguide
+
+in the previous item (6) , i make use of their css formatting convention ,try to consider the use of id as an anti-pattern 
+giving priority to the use of classes as element selectors  , using none value insted of 0 and using scss sintax insted of 
+classic sass sintax.
