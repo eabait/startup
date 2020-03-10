@@ -2,10 +2,18 @@
 header,footer,aside,nav {
   background: rgb(135, 221, 65);
 }
+body {
+  display: block;
+  padding: 0;
+}
 
 * {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px;
+  border-radius: 10px;
   /* 2.3.6 
   font-weight: bold; This is how I would add weight to the fonts, because they are not override*/
 }
@@ -15,23 +23,38 @@ header,footer {
 }
 
 .header {
-  font-size: 46px; 
+  font-size: 46px;
+  text-align: center;
 }
 
 .footer {
   font-size: 10px;
+  width: 100%;
+  display: flex;
 }
 
 .content {
+  width: 50%;
+  display: inline-block;
   font-size: 14px;
+  height: 31.25rem;
 }
 
+article {
+  height: 20rem;
+}
 .navigation {
+  width: 25%;
+  height: 31.25rem;
   font-size: 12px;
+  float: left;
 }
 
 .sidebar {
+  width: 25%;
   font-weight: 10px;
+  float: right;
+  height: 31.25rem;
 }
 
 [class*="a"],:not([class$="r"]) {
@@ -45,16 +68,6 @@ header,footer {
 /* 2.3.7 I would add an !important to the background attribute of the class to increase the priority  
  .oh-no-inline-styles  {
     background: green !important; }*/
-
-.wrapper {
-  display: flex;  
-  flex-flow: row wrap;
-}
-  
-.wrapper > * {
-  padding: 10px;
-  flex:  100%;  
-}
   
 @media all and (min-width: 600px) {
   .sidebar,.navigation { flex: 1 0 0; }
@@ -66,8 +79,4 @@ header,footer {
   .content    { order: 2; }
   .sidebar { order: 3; }
   .footer  { order: 4; }
-}
-
-body {
-  padding: 2.5em;
 }
