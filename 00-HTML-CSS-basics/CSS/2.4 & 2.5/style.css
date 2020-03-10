@@ -1,0 +1,143 @@
+html{
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+  background-color: blueviolet;
+  text-align: center;
+}
+
+footer{
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+aside{
+  background-color: darkgreen;
+}
+
+nav{
+  background-color: lightblue;
+}
+
+section *{
+  background-color: white;
+  text-align: unset;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.grid{
+  display: grid;
+  border-style: solid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 20% 60% 20%;
+  grid-gap: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header{
+  font-size: 46px;
+  border-style: solid;
+  border-color: black;
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.header h1{
+  margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.navigation{
+  font-size: 12px;
+  border-style: solid;
+  border-color: black;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.content{
+  font-size: 14px;
+  border-style: solid;
+  border-color: black;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.sidebar{
+  font-size: 10px;
+  border-style: solid;
+  border-color: black;
+  grid-column: 3;
+  grid-row: 2/ 3;
+}
+  
+.footer{
+  font-size: 10px;
+  border-style: solid;
+  border-color: black;
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+
+*[class$="r"]{
+  background-color: magenta;
+}
+
+*[class*="a"]:not([class$="r"]){
+  background-color: blue;
+}
+
+*[class]{
+  font-weight: bold;
+}
+
+.screen {
+  background-color: rgba(0,0,0,0.5);
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.screen:hover {
+  opacity: 1
+}
+.title {
+  color: #fff;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+  margin-left: -30px;
+}
+.screen:hover .title {
+  margin-left: 0;
+}
+.title p {
+  font-size: 25px;
+  padding: 5%;
+}
+.screen.fade-in .title {
+  margin-left: 0;
+}
