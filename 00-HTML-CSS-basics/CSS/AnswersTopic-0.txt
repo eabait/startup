@@ -1,0 +1,36 @@
+
+TOPIC-0
+
+6.How could you add weight to the global font definition to win over the classes added by point 3?
+
+I could add weight to the global font definition with this:
+
+html
+{
+	font-weight : bold
+}
+
+7.Imagine there is a declaration like class=”oh-no-inline-styles” style=”background:red” and you need to change the background to green without changing the inline style. How could you accomplish this?
+
+I accomplish this by using !important keyword.
+
+Example: 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .oh-no-inline-styles
+        {
+            background-color: green !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="oh-no-inline-styles" style="background:red">hola</h1>
+</body>
+</html>
