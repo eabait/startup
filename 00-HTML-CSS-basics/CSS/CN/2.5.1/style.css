@@ -1,0 +1,101 @@
+html{
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+  background-color: blueviolet;
+  text-align: center;
+}
+
+footer{
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+aside{
+  background-color: darkgreen;
+}
+
+nav{
+  background-color: lightblue;
+}
+
+section *{
+  background-color: white;
+  text-align: unset;
+}
+
+
+
+body .page{
+  display: block;
+  width: 100vw;
+  height: 1fr 2fr 1fr;
+  padding: 0px;
+  margin: 0px;
+  border-style: solid;
+  border-color: black;
+}
+
+.header{
+  font-size: 46px;
+  position: absolute;
+  display: block;
+  top: 0px;
+  width: 100vw;
+  height: 20vh;
+}
+
+.navigation{
+  font-size: 12px;
+  display: block;
+  position: fixed;
+  top: 20vh;
+  left: 0px;
+  width: 25vw;
+  height: 60vh;
+}
+
+.content{
+  font-size: 14px;
+  display: block;
+  position: fixed;
+  background-color: white;
+  text-align: center;
+  top: 20vh;
+  left: 25vw;
+  width: 50vw;
+  height: 60vh;
+}
+
+.sidebar{
+  font-size: 10px;
+  display: block;
+  position: fixed;
+  top: 20vh;
+  right: 0px;
+  width: 25vw;
+  height: 60vh;
+}
+
+.footer{
+  font-size: 10px;
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 20vh;
+}
+
+*[class$="r"]{
+  background-color: magenta;
+}
+
+*[class*="a"]:not([class$="r"]){
+  background-color: blue;
+}
+
+*[class]{
+  font-weight: bold;
+}
