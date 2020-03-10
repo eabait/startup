@@ -42,9 +42,9 @@ header,footer {
 	background-color: magenta;
 }
 
-/* 2.3.7 I would add an ID to just override the background
-#with-green{
-    background: green; }*/
+/* 2.3.7 I would add an !important to the background attribute of the class to increase the priority  
+ .oh-no-inline-styles  {
+    background: green !important; }*/
 
 .wrapper {
   display: flex;  
