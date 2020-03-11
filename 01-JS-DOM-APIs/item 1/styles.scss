@@ -1,0 +1,25 @@
+* {
+  font-family: "Roboto", sans-serif;
+
+  section {
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  #hidden-section {
+    opacity: 1;
+    animation-name: classicFadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+  }
+
+  @keyframes classicFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

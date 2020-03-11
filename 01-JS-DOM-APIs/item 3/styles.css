@@ -1,0 +1,28 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* section {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* #joke-section {
+  margin-left: 25%;
+  background-color: #ccc;
+  height: 100px;
+  width: 50%;
+}
+
+* button {
+  margin-left: 47%;
+}
+/*# sourceMappingURL=styles.css.map */

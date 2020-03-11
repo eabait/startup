@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--Normalize stylesheet-->
+    <link rel="stylesheet" href="normalize.css" />
+    <!--css stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github API</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div>
+          Github Profile Search
+        </div>
+      </nav>
+      <div class="search-form">
+        <label for="profile">Enter profile</label>
+        <input type="text" id="searchbox" />
+        <small id="profileHelp">If it's on Github we'll fin it!</small>
+        <button class="btn">Search</button>
+      </div>
+      <aside class="list-container">
+        <div id="repo-list"></div>
+      </aside>
+    </div>
+  </body>
+</html>
