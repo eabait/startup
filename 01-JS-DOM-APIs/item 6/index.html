@@ -19,24 +19,26 @@
     <title>Topic 1</title>
   </head>
   <header>
-      <h1>Setup you race</h1>
+    <h1>Setup you race</h1>
   </header>
   <body>
-      <form class="form">
-          <label class="form-label" for="racersAmountSelection">Select the amount of racers</label>
-          <selectc class="custom-select" id="racersAmountSelection">
-              <option selected>Select</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-          </select>
-      </form>
+    <form method="POST" name="sample">
+      <br />
 
-      <!-- unfinished-->
+      Racer name: <input type="text" name="name" /> Starting position :
+      <input type="number" name="position" /> <br /><br />
 
- 
+      <input id="btn" type="button" name="add" value="Add Racer" onclick="addRacer()" />
+      <hr />
+
+      <table id="table1" class="table">
+        <thead>
+          <th>Position -</th>
+          <th>Racer</th>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </form>
   </body>
 </html>
