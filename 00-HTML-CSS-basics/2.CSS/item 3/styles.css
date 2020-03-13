@@ -1,10 +1,10 @@
-* {
+body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
 
-* header {
+body header {
   font-size: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,28 +16,28 @@
   background-color: red;
 }
 
-* .header {
+body .header {
   font-size: 46px;
 }
 
-* .content {
+body .content {
   font-size: 14px;
 }
 
-* #section-header {
+body #section-header {
   height: 50px;
   background-color: indigo;
 }
 
-* #main-header {
+body #main-header {
   height: 100px;
 }
 
-* article {
+body article {
   height: 200px;
 }
 
-* footer {
+body footer {
   width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,43 +49,43 @@
   background-color: green;
 }
 
-* .footer {
+body .footer {
   font-size: 10px;
 }
 
-* #section-footer {
+body #section-footer {
   width: auto;
   height: 50px;
   background-color: lightcoral;
 }
 
-* aside {
+body aside {
   float: right;
   height: 300px;
   width: 150px;
   background-color: greenyellow;
 }
 
-* .sidebar {
+body .sidebar {
   font-size: 10px;
 }
 
-* nav {
+body nav {
   float: left;
   height: 300px;
   width: 150px;
   background-color: hotpink;
 }
 
-* .navigation {
+body .navigation {
   font-size: 12px;
 }
 
-* body [class$="r"] {
+body body [class$="r"] {
   background-color: magenta;
 }
 
-* body [class*="a"] {
+body body [class*="a"]:not([class$="r"]) {
   background-color: blue;
 }
 /*# sourceMappingURL=styles.css.map */
