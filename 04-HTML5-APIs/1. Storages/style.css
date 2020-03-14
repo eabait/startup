@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: snow;
+}
+
+.tittle{
+    margin: 10px;
+}
+
+.textArea{
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.buttons{
+    margin: 10px;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 5px;
+}
