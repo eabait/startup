@@ -121,3 +121,18 @@ const actors = [
 movie1.addCast(robert);
 movie1.addCast(actors);
 movie1.showCast();
+
+let social = {
+  share(friendName) {
+    console.log(friendName + " shared " + this.title);
+  },
+
+  like(friendName) {
+    console.log(friendName + " like " + this.title);
+  }
+};
+
+Object.assign(Movie.prototype, social);
+
+movie1.share('Jhon Cenna');
+movie1.like('Walther White')
