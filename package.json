@@ -1,0 +1,27 @@
+{
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "Please, use this repository as a base for you training phase. The idea is to fork this project so everyone uses the same folder structure for the exercises.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucianoSassano/startup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucianoSassano/startup/issues"
+  },
+  "homepage": "https://github.com/LucianoSassano/startup#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7"
+  }
+}
