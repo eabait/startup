@@ -65,3 +65,47 @@ request.onsuccess = e => {
 request.onerror = e => {
   console.log(`error: ${e.target.error} found`);
 };
+
+//-----------------------Drag and Drop--------------------------//
+
+const holder = document.getElementById("holder");
+const state = document.getElementById("status");
+
+if (typeof window.FileReader === "undefined") {
+  state.className = "fail";
+} else {
+  state.className = "success";
+  state.innerHTML = "Drag a file into the box";
+}
+
+holder.ondragover = () => {
+  this.className = "hover";
+  return false;
+};
+
+holder.ondragend = () => {
+  this.className = "";
+  return false;
+};
+
+holder.ondrop = e => {
+  this.className = "";
+  e.preventDefault();
+
+  const file = e.dataTransfer.files[0];
+  const reader = new FileReader();
+  if (file.type === "text/plain") {
+    reader.onload = event => {
+      console.log(event.target);
+      holder.innerText = event.target.result;
+    };
+
+    console.log(file);
+
+    reader.readAsText(file);
+
+    return false;
+  } else {
+    alert("Only txt type allowed");
+  }
+};
