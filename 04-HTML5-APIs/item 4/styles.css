@@ -1,0 +1,11 @@
+body{
+    justify-content: center;
+    margin-left: 25%;
+    
+}
+
+body img {
+    max-height: 1000px;
+    height: 100%;
+    
+}
