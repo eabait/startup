@@ -1,0 +1,46 @@
+.movies {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    width: 18em;
+    border: solid slategrey 2px;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.movies li {
+    cursor: pointer;
+    position: relative;
+    color: #444;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin: .5em;
+    padding: 0.3em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.ancle:link, .ancle:visited{
+    text-decoration:none;
+    color: #444;
+}
+
+.ancle:active{
+    color: red;
+}
+
+.movies li:hover {
+    background-color: #eee;
+    left: .2em;
+}
+
+.movies .number-index {
+    display: inline-block;
+    position: relative;
+    background-color: slategrey;
+    color: white;
+    font-size: small;
+    border-radius: 4px;
+    padding: .5em;
+    text-shadow: none;
+    margin-right: .5em;
+}

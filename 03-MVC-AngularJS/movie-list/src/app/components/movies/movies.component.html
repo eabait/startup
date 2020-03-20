@@ -1,0 +1,9 @@
+<section>
+    <ul class="movies">
+        <li *ngFor="let movie of movies">
+            <a class="ancle" routerLink="/detail/{{movie.id}}">
+                <span class="number-index">{{movie.id}}</span> {{movie.tittle}}
+            </a>
+        </li>
+    </ul>
+</section>

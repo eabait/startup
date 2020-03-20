@@ -1,0 +1,18 @@
+<section *ngIf="movie">
+    <h2>{{movie.tittle | uppercase}} Details</h2>
+    <h4>ID: {{movie.id}}</h4>
+    <section>
+        <ul>
+            <li>Tittle: <input [(ngModel)]="movie.tittle" placeholder="tittle"/> </li>
+            <li>Year: <input [(ngModel)]="movie.year" placeholder="year"/> </li>
+            <li>Duration: <input [(ngModel)]="movie.duration" placeholder="duration"/> </li>
+        </ul>
+        <h4>Casting: </h4>
+        <ul>
+            <li *ngFor="let actor of movie.cast">
+                Name: {{actor.name}}, Age: {{actor.age}}
+            </li>
+        </ul>
+    </section>
+</section>
+<button (click)='goBack()'>Back</button>
