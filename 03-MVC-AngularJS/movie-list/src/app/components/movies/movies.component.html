@@ -4,6 +4,16 @@
             <a class="ancle" routerLink="/detail/{{movie.id}}">
                 <span class="number-index">{{movie.id}}</span> {{movie.tittle}}
             </a>
+            <button class="delete" title="delete movie" (click)="delete(movie)">x</button>
         </li>
     </ul>
 </section>
+
+<div>
+    <label>Tittle:
+      <input #tittle />
+    </label>
+    <button (click)="add(tittle.value); tittle.value=''">
+      add
+    </button>
+  </div>
