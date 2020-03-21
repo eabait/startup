@@ -5,7 +5,7 @@ export interface Actor {
 
 export interface Movie {
     id: number;
-    tittle: string;
+    title: string;
     year: number;
     duration: number;
     cast: Actor[];

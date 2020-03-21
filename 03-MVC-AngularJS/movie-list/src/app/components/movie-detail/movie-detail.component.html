@@ -1,19 +1,18 @@
-<section *ngIf="movie">
-    <h2>{{movie.tittle | uppercase}} Details</h2>
-    <h4>ID: {{movie.id}}</h4>
+<section *ngIf="movie" class="movie">
+    <h2 class="title"><span class="movie-title">{{movie.title | uppercase}}</span> Details</h2>
     <section>
-        <ul>
-            <li>Tittle: <input [(ngModel)]="movie.tittle" placeholder="tittle"/> </li>
-            <li>Year: <input [(ngModel)]="movie.year" placeholder="year"/> </li>
-            <li>Duration: <input [(ngModel)]="movie.duration" placeholder="duration"/> </li>
+        <ul class="list">
+            <li class="item">Title: <input class="input" [(ngModel)]="movie.title" placeholder="title"/> </li>
+            <li class="item">Year: <input class="input" [(ngModel)]="movie.year" placeholder="year"/> </li>
+            <li class="item">Duration: <input class="input" [(ngModel)]="movie.duration" placeholder="duration"/> </li>
         </ul>
-        <h4>Casting: </h4>
-        <ul>
-            <li *ngFor="let actor of movie.cast">
+        <h3>Casting: </h3>
+        <ul class="list">
+            <li class="item" *ngFor="let actor of movie.cast">
                 Name: {{actor.name}}, Age: {{actor.age}}
             </li>
         </ul>
     </section>
+    <button class="btn" (click)="save()">Save</button>
+    <button class="btn" (click)='goBack()'>Back</button>
 </section>
-<button (click)="save()">save</button>
-<button (click)='goBack()'>Back</button>

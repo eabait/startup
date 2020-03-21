@@ -9,6 +9,7 @@ import { MovieService } from '../../services/movie.service';
 })
 export class MoviesComponent implements OnInit {
   movies: Movie[];
+  title: string;
 
   constructor(
     private movieService: MovieService
@@ -16,6 +17,7 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getMovies();
+    this.title = '';
   }
 
   getMovies(): void {
@@ -23,13 +25,14 @@ export class MoviesComponent implements OnInit {
         .subscribe(movies => this.movies= movies);
   }
 
-  add(tittle: string): void {
-    tittle = tittle.trim();
-    if (!tittle) { return; }
-    this.movieService.addMovie({ tittle } as Movie)
-      .subscribe(hero => {
-        this.movies.push(hero);
-      });
+  add(title: string): void {
+    title = title.trim();
+    if (!title) { return; }
+    const movie: Movie = ({title} as Movie);
+    this.movieService.addMovie(movie)
+    .subscribe(movie => {
+      this.movies.push(movie);
+    });
   }
 
   delete(movie: Movie): void {

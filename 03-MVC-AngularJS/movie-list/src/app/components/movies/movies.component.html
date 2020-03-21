@@ -1,19 +1,15 @@
 <section>
     <ul class="movies">
-        <li *ngFor="let movie of movies">
+        <li *ngFor="let movie of movies" class="item">
             <a class="ancle" routerLink="/detail/{{movie.id}}">
-                <span class="number-index">{{movie.id}}</span> {{movie.tittle}}
+                <span class="number-index">{{movie.id}}</span> {{movie.title}}
             </a>
-            <button class="delete" title="delete movie" (click)="delete(movie)">x</button>
+            <button class="delete" title="Delete movie" (click)="delete(movie)">x</button>
         </li>
     </ul>
 </section>
 
-<div>
-    <label>Tittle:
-      <input #tittle />
-    </label>
-    <button (click)="add(tittle.value); tittle.value=''">
-      add
-    </button>
-  </div>
+<section class="addMovie">
+    <label>Title: <input class="input" [(ngModel)]='title' /> </label>
+    <button class="btn" (click)="add(title); title=''"> Add </button>
+</section>

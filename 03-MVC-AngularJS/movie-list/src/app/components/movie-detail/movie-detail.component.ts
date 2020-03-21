@@ -3,8 +3,7 @@ import { Component, OnInit} from '@angular/core';
 import { Movie } from '../../interfaces/IMovie';
 import { MovieService } from '../../services/movie.service';
 
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
+import { ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-movie-detail',
@@ -15,8 +14,8 @@ export class MovieDetailComponent implements OnInit {
   movie: Movie;
   constructor(
     private route: ActivatedRoute,
-    private movieService: MovieService,
-    private location: Location
+    private router: Router,
+    private movieService: MovieService
   ) { }
 
   ngOnInit(): void {
@@ -30,7 +29,7 @@ export class MovieDetailComponent implements OnInit {
   }
 
   goBack(): void {
-    this.location.back();
+    this.router.navigate(['/movies']);
   }
 
   save(): void {

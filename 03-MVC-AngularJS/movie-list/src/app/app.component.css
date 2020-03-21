@@ -7,4 +7,24 @@
 
 .primary-header{
     margin: auto;
+    background-color: slategrey;
+    padding: 0.6em;
+    margin-bottom: 0.3em;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.primary-title{
+    color: white;
+    margin-left: 0.6em;
+    font-size: 26px;
+}
+
+.primary-title:hover{
+    font-size: 27px;
+    color: rgb(245, 245, 245);
+}
+
+.link{
+    text-decoration: none;
 }
