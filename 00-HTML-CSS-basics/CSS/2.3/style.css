@@ -1,0 +1,61 @@
+html{
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+  background-color: blueviolet;
+  text-align: center;
+}
+
+footer{
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+aside{
+  background-color: darkgreen;
+  color: white;
+}
+
+nav{
+  background-color: lightblue;
+}
+
+section *{
+  background-color: white;
+  text-align: unset
+  ;
+}
+
+.header{
+  font-size: 46px;
+}
+
+.footer{
+  font-size: 10px;
+}
+
+.content{
+  font-size: 14px;
+}
+
+.navigation{
+  font-size: 12px;
+}
+
+.sidebar{
+  font-size: 10px;
+}
+
+*[class$="r"]{
+  background-color: magenta;
+}
+
+*[class*="a"]:not([class$="r"]){
+  background-color: blue;
+}
+
+*[class]{
+  font-weight: bold;
+}
