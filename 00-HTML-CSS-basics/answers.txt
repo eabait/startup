@@ -1,0 +1,9 @@
+2.3.6: changing the font-weight of the global (*) selector
+
+* {
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 900;
+}
+
+2.3.7: !important can overdrive the declaration although it's not recomended using it.

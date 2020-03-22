@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web UI Bootcamp 2020</title>
+</head>
+
+<body>
+    <h1>Sign Up Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Your information:</legend>
+
+            <label for="firstName">First Name:</label><br><br/>
+            <input type="text" name="firstName" id="firstName" placeholder="Your First Name" required/><br><br/>
+
+
+            <label for="lastName">Last Name:</label><br><br/>
+            <input type="text" name="lastName" id="lastName" placeholder="Your Last Name" required/><br><br/>
+
+
+            <label for="birthday">Birthday:</label><br><br/>
+            <input type="date" name="birthday" id="birthday" required/><br><br/>
+
+
+            <label for="email">Email:</label><br><br/>
+            <input type="email" name="email" id="email" placeholder="Your Email" required/><br><br/>
+
+
+            <label for="sports">Your Favorite Sport:</label><br><br/>
+            <select name="sports">
+            <option value="soccer">Soccer</option>
+            <option value="football">Football</option>
+            <option value="baseball">Baseball</option>
+            <option value="basketball">Basketball</option>
+            </select><br><br/>
+
+            <label for="bio">Bio:</label><br><br/>
+            <textarea name="bio" id="bio" cols="25" rows="3" placeholder="Your Biography"></textarea><br><br/>
+
+            <span>
+                <input type="submit" value="Sign Up"/>
+            </span>
+            <span>
+                <input type="reset" value="Reset">
+            </span>
+        </fieldset>
+    </form>
+</body>
+
+</html>
