@@ -10,35 +10,24 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <!--Js file-->
-
-    <script src="main.js"></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Topic 1</title>
   </head>
   <header>
-    <h1>Setup you race</h1>
+    <h1>Dinamic Table Creation</h1>
   </header>
   <body>
-    <form method="POST" name="sample">
-      <br />
-
-      Racer name: <input type="text" name="name" /> Starting position :
-      <input type="number" name="position" /> <br /><br />
-
-      <input id="btn" type="button" name="add" value="Add Racer" onclick="addRacer()" />
+    <form>
+      <button id="creationBtn">Create</button>
       <hr />
-
+        
       <table id="table1" class="table">
-        <thead>
-          <th>Position -</th>
-          <th>Racer</th>
-        </thead>
-
-        <tbody></tbody>
+        <th>Name -</th>
+        <th>Lastname</th>
+        <th>- Age</th>
       </table>
     </form>
+    <script src="main.js"></script>
   </body>
 </html>

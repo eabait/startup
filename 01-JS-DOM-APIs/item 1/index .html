@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Js file-->
+    <script src="main.js"></script>
     <!--Normalize stylesheet-->
     <link rel="stylesheet" href="normalize.css" />
     <!--My stylesheet-->
@@ -10,14 +12,12 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <!--Js file-->
-    <script src="main.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Topic 1 </title>
+    <title>Topic 1</title>
   </head>
-  <body>
+  <body onload="setFade()">
     <section>
       <h2>First Section</h2>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut omnis
@@ -36,6 +36,6 @@
       consequuntur quod veritatis blanditiis ipsa laborum magnam deserunt saepe
       libero nesciunt, amet ipsum harum vel dolorum facere, quasi error? Iusto!
     </section>
-    <section id="hidden-section">Hello World</section>
+    <section id="fadeInSection">Hello World</section>
   </body>
 </html>
