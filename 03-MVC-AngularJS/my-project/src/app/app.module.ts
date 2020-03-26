@@ -1,13 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {RouterModule} from '@angular/router'
+import { RouterModule } from '@angular/router'
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {TableComponent} from './components/table/table.component'
+import { TableComponent } from './components/table/table.component'
 import { MovieComponent } from './components/movie/movie.component'
 import { MovieServiceClient } from './services/movie.service.client';
+import { DetailsComponent } from './components/details/details.component';
+
+
 
 
 
@@ -16,7 +19,10 @@ import { MovieServiceClient } from './services/movie.service.client';
   declarations: [
     AppComponent,
     TableComponent,
-    MovieComponent
+    MovieComponent,
+    DetailsComponent,
+    
+
   ],
   imports: [
     BrowserModule,
