@@ -7,5 +7,8 @@
     margin: 10px;
   }
 
-  
+  #fadeInSection {
+    opacity: 0;
+    transition: 3s;
+  }
 }

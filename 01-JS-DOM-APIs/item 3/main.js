@@ -10,7 +10,7 @@ async function fetchJokes() {
     if (res.ok) {
       document.getElementById("joke-section").innerHTML = data.value.joke;
     } else {
-      res.status(500).json({ message: "interal error" });
+      alert("an error has ocurred");
     }
   } catch (err) {
     document.getElementById("joke-section").style.backgroundColor = "red";

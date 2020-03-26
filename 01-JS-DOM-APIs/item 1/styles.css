@@ -9,4 +9,10 @@
           justify-content: center;
   margin: 10px;
 }
+
+* #fadeInSection {
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
 /*# sourceMappingURL=styles.css.map */
