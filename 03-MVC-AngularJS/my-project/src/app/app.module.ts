@@ -9,6 +9,8 @@ import { TableComponent } from './components/table/table.component'
 import { MovieComponent } from './components/movie/movie.component'
 import { MovieServiceClient } from './services/movie.service.client';
 import { DetailsComponent } from './components/details/details.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -21,6 +23,8 @@ import { DetailsComponent } from './components/details/details.component';
     TableComponent,
     MovieComponent,
     DetailsComponent,
+    AdminComponent,
+    LoginComponent,
     
 
   ],

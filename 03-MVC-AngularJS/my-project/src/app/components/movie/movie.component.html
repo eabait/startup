@@ -7,8 +7,5 @@
   <div class="card-body">
     <p class="card-text">{{ movie.title }}</p>
   </div>
-  <button class="btn btn-danger">Erase</button>
-  <button class="btn btn-primary">Modify</button>
-  <app-details class="btn btn-info"></app-details>
-  
+  <button (click)="handleDetailsView(movie.id)" class="btn">View Details</button>
 </div>
