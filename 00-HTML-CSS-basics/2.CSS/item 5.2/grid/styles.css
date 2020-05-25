@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto[col-start]);
+  grid-template-rows: repeat(2, 50% [row-start]);
+}
+
+.grid-card {
+  padding: 10px;
+  height: auto;
+  border: 2px solid black;
+  margin: 10%;
+  grid-template-rows: 5% 90%;
+  background-color: #fff;
+  align-self: stretch;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.screen {
+  background-color: transparent;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+.screen:hover {
+  opacity: 1;
+}
+
+.text {
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.screen:hover .text {
+  margin-left: 15%;
+  background-color: grey;
+  width: auto;
+}
+
+@media all and (min-width: 1080px) {
+  .grid-container {
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 1079px) and (min-width: 700px) {
+  .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(2, auto [col-start]);
+    grid-template-rows: repeat(3, auto [row-start]);
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 699px) and (min-width: 400px) {
+  .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(1, auto, [col-start]);
+    grid-template-rows: repeat(6, auto [row-start]);
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 399px) and (min-width: 200px) {
+  .grid-container {
+    width: 100%;
+    grid-template-columns: repeat(1, auto, [col-start]);
+    grid-template-rows: repeat(6, auto [row-start]);
+  }
+  img {
+    max-width: 100%;
+  }
+}
