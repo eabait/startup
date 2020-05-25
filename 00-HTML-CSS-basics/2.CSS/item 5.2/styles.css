@@ -1,0 +1,60 @@
+* .container {
+  clear: both;
+  background-color: yellowgreen;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 8px;
+}
+
+* .container .card {
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+  width: calc(33.3333% - 16px);
+  margin: 8px;
+  height: auto;
+  position: relative;
+  float: left;
+}
+
+* .container .card .screen {
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: 999;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+* .container .card .screen .text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-left: 0;
+}
+
+* .container .card .screen:hover {
+  opacity: 1;
+}
+
+* .container .card .screen:hover .text {
+  margin-left: 50px;
+}
+
+* .container .card img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left;
+}
+
+* .container .card a {
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */

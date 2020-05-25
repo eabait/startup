@@ -1,0 +1,14 @@
+* {
+  font-family: "Roboto", sans-serif;
+
+  section {
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  #fadeInSection {
+    opacity: 0;
+    transition: 3s;
+  }
+}

@@ -1,0 +1,41 @@
+* {
+  max-width: 1920px;
+  width: 100%;
+  max-height: 1080px;
+  height: 100%;
+}
+
+* .container .navbar {
+  background-color: #aac0af;
+  height: 10%;
+  width: 100%;
+  font-size: 27px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 3%;
+  padding-top: 6%;
+}
+
+* .container .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  float: left;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 25%;
+  width: 20%;
+  height: 7%;
+}
+
+* .container .list-container {
+  background-color: burlywood;
+  height: 100%;
+  width: 40%;
+  float: right;
+}
+
+* .container .list-container #repo-list {
+  margin-bottom: 30%;
+}
