@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.primary-header{
+    height: 50px;
+    background-color: gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.content{
+    background-color: grey;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content header, 
+.content footer, 
+.content article{
+    background-color: lightslategray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.content article{
+    margin: 10px auto;
+}
+
+
+.primary-column{
+    float: left;
+    width: 60%;
+    padding: 15px;
+    margin: auto 1%;
+}
+
+.column {
+    float: left;
+    width: 19%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width:600px) {
+    .column{
+      width: 100%;
+    }
+    .primary-column{
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+.primary-footer{
+    background-color: grey;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.sidebar{
+    background-color: lightslategray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.navigation{
+    background-color: lightslategray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}

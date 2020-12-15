@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+.movies {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 18em;
+    border: solid slategrey 3px;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.movies .item {
+    cursor: pointer;
+    position: relative;
+    color: #444;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin: .5em;
+    padding: 0.3em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.ancle:link, .ancle:visited{
+    text-decoration:none;
+    color: #444;
+}
+
+.ancle:active{
+    color: red;
+}
+
+.movies .item:hover {
+    background-color: #eee;
+    left: .2em;
+}
+
+.movies .number-index {
+    display: inline-block;
+    position: relative;
+    background-color: slategrey;
+    color: white;
+    font-size: small;
+    border-radius: 4px;
+    padding: .5em;
+    text-shadow: none;
+    margin-right: .5em;
+}
+
+.delete{
+    padding: auto 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: #ddd;
+    color: red;
+}
+
+.addMovie{
+    margin: .5em 0 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: solid slategrey 3px;
+    border-radius: 4px;
+    width: 18em;
+    padding: .5em;
+    background-color: #ddd;
+}
+
+.btn{
+    margin: auto .5em;
+    padding: .2em .5em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ddd;
+    color: red;
+}
+
+.input{
+    border-radius: 4px;
+    padding: .3em;
+}

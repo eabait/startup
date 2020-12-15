@@ -1,0 +1,23 @@
+.header{
+    font-size: 46px;
+    background-color: magenta;
+}
+
+.footer{
+    font-size: 10px;
+    background-color: magenta;
+}
+
+.content{
+    font-size: 14px;
+}
+
+.navigation{
+    font-size: 12px;
+    background-color: blue;
+}
+
+.sidebar{
+    font-size: 10px;
+    background-color: magenta;
+}

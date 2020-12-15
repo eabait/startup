@@ -1,0 +1,22 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+header{
+    background-color: #d3d3d3;
+    text-align: center;
+}
+
+footer{
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+aside{
+    background-color: lightgreen;
+}
+
+nav{
+    background-color: lightslategray;
+}
