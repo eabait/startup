@@ -1,9 +1,25 @@
+var hidden = document.querySelector(".hidden");
+var clickBtn = document.querySelector(".clic-me");
+
 window.onload = function() {
-    document.querySelector(".hidden").style.visibility = "visible";
+   hidden.style.visibility = "visible";
 }
 
-document.querySelector(".clic-me").addEventListener("click",buenosDias);
+clickBtn.addEventListener("click",entryData);
+
 
 function buenosDias() {
     alert("Buenos dias");
+}
+
+function entryData() {
+    fetch("http://api.icndb.com/jokes/random")
+    .then(resp => resp.json())
+    .then(dat => {
+        hidden.innerHTML = dat.value.joke;
+    })
+    .catch(error => {
+        hidden.innerHTML = JSON.stringify(error)
+        hidden.style.color = "red";
+    });
 }
