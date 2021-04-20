@@ -1,0 +1,47 @@
+html,
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+*{
+    box-sizing: inherit;
+}
+
+.conteiner{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    background-color: #A4D0D7;
+}
+.text-area{
+    resize: none;
+}
+
+.files-zone{
+    width: 50%;
+    height: 200px;
+    background-color: #76BBC4 ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    color:#36708D;
+    border: 2px solid #36708D;
+}
+
+
+.hidden{
+    display: none;
+}
+
+#thumbnail{
+    height: 60%;
+}
+
