@@ -29,3 +29,15 @@ section {
 .disp-none{
     list-style: none;
 }
+
+.td{
+    min-width: 50px;
+    height: 1rem;
+
+    padding: 5px 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px  gray,-2px -2px 5px  gray;
+}
+.table{
+    border-spacing: 10px;
+}

@@ -3,6 +3,7 @@ var clickBtn = document.querySelector(".clic-me");
 var lista = document.querySelector(".lista");
 var listBtn = document.querySelector(".search");
 var sourse = document.querySelector(".entry-src");
+var table = document.querySelector(".table");
 
 window.onload = function() {
    hidden.style.visibility = "visible";
@@ -39,4 +40,30 @@ function search(q = "JavaScript") {
         document.querySelectorAll(".content.right li").forEach(item => item.setAttribute("class" ,"disp-none"));
     });
 }
+
+
+
+function matrix(arr) {
+    let fragment = document.createDocumentFragment();
+    for (let i = 0; i < arr.length; i++) {
+        let tr = document.createElement('tr');
+        let row = arr[i];
+        for (let j = 0; j < row.length; j++) {
+            let cell = row[j];
+            let td = document.createElement('td');
+            td.textContent = cell;
+            td.classList.add("td")
+            tr.appendChild(td);
+        } 
+        fragment.appendChild(tr);
+    }
+    table.appendChild(fragment);
+}
+
+const array = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+]
+matrix(array);
 

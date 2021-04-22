@@ -1,38 +1,5 @@
-
-class EventEmitter {
-    constructor(){
-        this.events = {};
-    };
-
-    on (eventName, callback){
-        if(!this.events[eventName]) {
-            this.events[eventName] = [];
-          }
-        const event = this.events[eventName];
-        event.push(callback);
-        return this.event;
-    };
-    emit (eventName){
-        const event = this.events[eventName];
-        event.forEach(calls => {
-            calls.call();
-        });
-    };
-    off (eventName, callback){
-        const event = this.events[eventName];
-        event = () => {};
-    };
-}
-/*
-events = {
-    eventName:[callback,....],
-    eventName:[callback,....]...
-}
-*/
-
-
-
-
+import EventEmitter from './emiter.js';
+import {Logger,social} from './utilities.js';
 
 class Movie extends EventEmitter {
     constructor(name,year,duration){
@@ -40,8 +7,7 @@ class Movie extends EventEmitter {
         this.name = name;
         this.year = year;
         this.duration = duration;
-        this.actors = [];
-        
+        this.actors = [] ;
     }
     play() {
         this.on(this.name,function() {console.log("playing " + this.name)}) 
@@ -52,22 +18,21 @@ class Movie extends EventEmitter {
     resume() {
         this.on(this.name,()=>  {console.log("resume " + this.name)}) 
     };
-    addCast(...args){
-        
-            for (let i = 1; i < args.length; i++) {
-                
-             
-            this.actors.push(args[i-1])
-        };
-        
-
+    addCast(actor){
+        if (Array.isArray(actor)) {
+            for (let i = 0; i < actor.length; i++) {
+                this.actors.push(actor[i])
+                };
+        }
+        if (!Array.isArray(actor)) {
+            this.actors.push(actor);
+            
+        }
+       
     }
-
 }
 
-
-
-class Actor{
+class Actor {
     constructor (name,age){
         this.name = name;
         this.age = age;
@@ -75,17 +40,20 @@ class Actor{
 }
 
 
-const actore = new Actor("pancho",50)
+Object.assign(Movie.prototype,social);
 
-const starsWars = new Movie(" 'Star Wars' ",1996,"4:45hs")
-
-console.log("Year: " + starsWars.year);
-console.log("Duration: " + starsWars.duration);
+const starsWars = new Movie(" 'Star Wars' ",1996,"4:45hs");
+const esteban = new Actor("Esteban Paez",23);
+const actors = [ 
+    new Actor("Pancho Gutierrez",50),
+    new Actor('Paul Winfield', 50),
+    new Actor('Michael Biehn', 50),
+    new Actor('Linda Hamilton', 50)
+]
+starsWars.addCast(actors);
+starsWars.addCast(esteban);
 console.log(starsWars);
-console.log(actore);
-
-
-// function saludar(texto = "Hola") {
-//     console.log(texto);
-// }
-
+let str = starsWars.share("ernesto");
+console.log(str)
+str = starsWars.like("paola");
+console.log(str)
